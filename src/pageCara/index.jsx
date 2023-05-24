@@ -241,7 +241,6 @@ function Pagecara() {
 
           <Box
             sx={{
-              display: "flex",
               justifyContent: "center",
               alignItems: "center",
               gap: { xs: "20px", md: "20px" },
