@@ -6,7 +6,6 @@ function Navbar() {
     <Box
       sx={{
         height: "148px",
-        // width: "100%",
         display: "flex",
         alignItems: { xs: "unset", md: "center" },
       }}
@@ -15,8 +14,6 @@ function Navbar() {
         sx={{
           display: "flex",
           justifyContent: "start",
-          //   backgroundColor: "red",
-          width: "100%",
           marginLeft: { xs: "30px", md: "100px" },
         }}
       >

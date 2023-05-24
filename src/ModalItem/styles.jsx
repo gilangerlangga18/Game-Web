@@ -1,0 +1,83 @@
+export const modalSx = {
+  containerModal: {
+    position: "absolute",
+    height: "70px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "rgba(193, 224, 245, 1)",
+    width: "100%",
+    borderRadius: "20px 20px 0 0",
+    zIndex: "5",
+  },
+  textGift: {
+    fontFamily: "Merriweather",
+    fontStyle: "normal",
+    fontWeight: " 700",
+    fontSize: { xs: "14px", md: "24px" },
+    lineHeight: { xs: "18px", md: "30px" },
+    textAlign: " center",
+    letterSpacing: "0.05em",
+  },
+  bodyModal: {
+    marginTop: "100px",
+    display: "flex",
+    flexDirection: "column",
+    gap: "30px",
+    justifyContent: "center",
+    alignItems: "center",
+    marginBottom: "50px ",
+  },
+  mainModal: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: "20px",
+  },
+  giftCode: {
+    backgroundImage: 'url("../../../image/Button Gift Code.png")',
+    width: { xs: "150px", md: "280px" },
+    height: { xs: "48px", md: "90px" },
+
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundSize: "cover",
+  },
+  textCode: {
+    fontWeight: "700",
+    fontSize: { xs: "14px", md: "24px" },
+
+    fontFamily: "Merriweather",
+    fontStyle: "normal",
+  },
+  containerItem: {
+    display: "flex",
+    width: "95%",
+    flexWrap: "wrap",
+
+    gap: "20px",
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  item: {
+    width: "120px",
+    height: "180px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  mainText: {
+    fontFamily: "Merriweather",
+    fontStyle: "normal",
+    fontWeight: " 400",
+    fontSize: { xs: "14px", md: "24px" },
+    lineHeight: "150%",
+
+    textAlign: "center",
+    letterSpacing: " 0.05em",
+    color: "white",
+  },
+};

@@ -5,6 +5,7 @@ import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import Typography from "@mui/material/Typography";
 import Dummy from "../DummyData/DataProject.json";
+import { modalSx as sx } from "./styles";
 
 const style = {
   position: "absolute",
@@ -39,34 +40,9 @@ export default function TransitionsModal({ isOpen, close }) {
     >
       <Fade in={isOpen}>
         <Box sx={style} className="itemModal">
-          <Box
-            sx={{
-              position: "absolute",
-              height: "70px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              backgroundColor: "rgba(193, 224, 245, 1)",
-              width: "100%",
-              borderRadius: "20px 20px 0 0",
-              zIndex: "5",
-            }}
-          >
+          <Box sx={sx.containerModal}>
             {" "}
-            <Typography
-              sx={{
-                fontFamily: "Merriweather",
-                fontStyle: "normal",
-                fontWeight: " 700",
-                fontSize: { xs: "14px", md: "24px" },
-                lineHeight: { xs: "18px", md: "30px" },
-                textAlign: " center",
-                letterSpacing: "0.05em",
-              }}
-            >
-              {" "}
-              Free Gift Code!!
-            </Typography>
+            <Typography sx={sx.textGift}> Free Gift Code!!</Typography>
             <Box
               component="img"
               src="../../../image/close-circle.png"
@@ -77,92 +53,21 @@ export default function TransitionsModal({ isOpen, close }) {
               }}
             />
           </Box>
-          <Box
-            sx={{
-              marginTop: "100px",
-              display: "flex",
-              flexDirection: "column",
-              gap: "30px",
-              justifyContent: "center",
-              alignItems: "center",
-              marginBottom: "50px ",
-            }}
-          >
-            <Typography
-              sx={{
-                fontFamily: "Merriweather",
-                fontStyle: "normal",
-                fontWeight: " 400",
-                fontSize: { xs: "14px", md: "24px" },
-                lineHeight: "150%",
-
-                textAlign: "center",
-                letterSpacing: " 0.05em",
-                color: "white",
-              }}
-            >
+          <Box sx={sx.bodyModal}>
+            <Typography sx={sx.mainText}>
               {" "}
               Copy these gift code and redeem in your profile
             </Typography>
 
             {Dummy.map((item) => (
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  gap: "20px",
-                }}
-              >
-                <Box
-                  sx={{
-                    backgroundImage:
-                      'url("../../../image/Button Gift Code.png")',
-                    width: { xs: "150px", md: "280px" },
-                    height: { xs: "48px", md: "90px" },
-
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    backgroundSize: "cover",
-                  }}
-                >
-                  <Typography
-                    sx={{
-                      fontWeight: "700",
-                      fontSize: { xs: "14px", md: "24px" },
-
-                      fontFamily: "Merriweather",
-                      fontStyle: "normal",
-                    }}
-                  >
-                    {item.gift}
-                  </Typography>
+              <Box sx={sx.mainModal}>
+                <Box sx={sx.giftCode}>
+                  <Typography sx={sx.textCode}>{item.gift}</Typography>
                 </Box>
 
-                <Box
-                  sx={{
-                    display: "flex",
-                    width: "95%",
-                    flexWrap: "wrap",
-
-                    gap: "20px",
-                    flexDirection: "row",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
+                <Box sx={sx.containerItem}>
                   {item.preview_item.map((image) => (
-                    <Box
-                      sx={{
-                        width: "120px",
-                        height: "180px",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                      }}
-                    >
+                    <Box sx={sx.item}>
                       {" "}
                       <Box component="img" src={image} />
                     </Box>

@@ -1,6 +1,7 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 import Navbar from "../Navbar";
+import { giftSx as sx } from "./styles";
 
 function PageGift({ openModal }) {
   return (
@@ -8,16 +9,14 @@ function PageGift({ openModal }) {
       sx={{
         backgroundImage: 'url("../../../image/Background Section 1.jpg")',
         backgroundSize: "cover",
-
+        overflowX: "hidden",
         backgroundPosition: "center",
         overflow: "hidden",
       }}
     >
       <Box
         sx={{
-          // width: "100%",
           height: { xs: "680px", md: "1080px" },
-          // backgroundColor: "yellowgreen",
         }}
       >
         <Navbar />
@@ -27,52 +26,14 @@ function PageGift({ openModal }) {
             flexDirection: { xs: "column-reverse", md: "row" },
           }}
         >
-          <Box
-            sx={{
-              width: { xs: "100%", md: "50%" },
-              height: "100%",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: { xs: "unset", md: "space-around" },
-                flexDirection: "column",
-                width: { xs: "unset", md: "840px" },
-                height: { xs: "400px", md: "690px" },
-
-                marginTop: { xs: "140px", md: "unset" },
-                gap: { xs: "20px", md: "unset" },
-              }}
-            >
+          <Box sx={sx.leftSide}>
+            <Box sx={sx.containerLeftSide}>
               <Box
                 component="img"
                 src="../../../image/Logo.png"
-                sx={{
-                  width: { xs: "284px", md: "604px" },
-                  height: { xs: "84px", md: "180px" },
-                  position: "relative",
-                  zIndex: 1,
-                }}
+                sx={sx.mainLogo}
               />
-              <Typography
-                sx={{
-                  fontWeight: "400",
-                  fontSize: { xs: "18px", md: "40px" },
-                  lineHeight: { xs: "23px", md: "45px" },
-                  textAlign: "center",
-                  width: { xs: "328px", md: "600px" },
-                  height: { xs: "46px", md: "90px" },
-                  color: "white",
-                  fontFamily: "Merriweather",
-                  fontStyle: "normal",
-                  letterSpacing: { xs: "0.05em", md: "unset" },
-                }}
-              >
+              <Typography sx={sx.mainText}>
                 Play the most attractive MMORPG in your hands
               </Typography>
               <Box
@@ -106,58 +67,33 @@ function PageGift({ openModal }) {
                 onClick={openModal}
                 sx={{
                   backgroundImage: 'url("../../../image/Button Gift Code.png")',
-
                   width: { xs: " 150px", md: "280px" },
-
                   height: { xs: "47px", md: "90px" },
                   marginTop: { xs: "unset", md: " -30px" },
-
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
                   backgroundSize: "cover",
                   cursor: "pointer",
-
-                  // backgroundPosition: "center",
                 }}
               >
-                <Typography
-                  sx={{
-                    fontWeight: "700",
-                    fontSize: { xs: "14px", md: "24px" },
-
-                    fontFamily: "Merriweather",
-                    fontStyle: "normal",
-                  }}
-                >
-                  Free Gift Code!!
-                </Typography>
+                <Typography sx={sx.giftText}>Free Gift Code!!</Typography>
               </Box>
             </Box>
           </Box>
           <Box
-            // className="movingAngle"
             sx={{
               display: "flex",
               height: "100%",
-              // justifyContent: "center",
               alignItems: "center",
-              //   backgroundColor: "red",
+              width: { xs: "400px", md: "1060px" },
+              backgroundColor: "red",
             }}
           >
             <Box
               component="img"
               src="../../../image/Image Hero Section 1.png"
-              sx={{
-                animation: { xs: "unset", md: "MoveUpDown 4s ease infinite" },
-                width: { xs: "410px", md: "1060px" },
-                height: { xs: "268px", md: "669px" },
-                // backgroundColor: "blue",
-                position: "absolute",
-                zIndex: 0,
-                right: { xs: "unset", md: 0 },
-                marginTop: { xs: "120px", md: "unset" },
-              }}
+              sx={sx.leftImageMain}
             />
           </Box>
         </Box>
