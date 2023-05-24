@@ -43,15 +43,6 @@ export default function TransitionsModal({ isOpen, close }) {
           <Box sx={sx.containerModal}>
             {" "}
             <Typography sx={sx.textGift}> Free Gift Code!!</Typography>
-            <Box
-              component="img"
-              src="../../../image/close-circle.png"
-              sx={{
-                position: "relative",
-                left: { xs: "unset", md: "270px" },
-                bottom: "10px",
-              }}
-            />
           </Box>
           <Box sx={sx.bodyModal}>
             <Typography sx={sx.mainText}>
