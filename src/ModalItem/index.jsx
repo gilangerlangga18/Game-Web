@@ -72,7 +72,7 @@ export default function TransitionsModal({ isOpen, close }) {
               src="../../../image/close-circle.png"
               sx={{
                 position: "relative",
-                left: "270px",
+                left: { xs: "unset", md: "270px" },
                 bottom: "10px",
               }}
             />

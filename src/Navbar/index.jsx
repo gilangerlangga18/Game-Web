@@ -6,7 +6,7 @@ function Navbar() {
     <Box
       sx={{
         height: "148px",
-        width: "100%",
+        // width: "100%",
         display: "flex",
         alignItems: { xs: "unset", md: "center" },
       }}

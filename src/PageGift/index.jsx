@@ -6,19 +6,16 @@ function PageGift({ openModal }) {
   return (
     <Box
       sx={{
-        right: "0",
-        left: "0",
-        Button: "0",
-        top: "0",
         backgroundImage: 'url("../../../image/Background Section 1.jpg")',
         backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
+
         backgroundPosition: "center",
+        overflow: "hidden",
       }}
     >
       <Box
         sx={{
-          width: "100%",
+          // width: "100%",
           height: { xs: "680px", md: "1080px" },
           // backgroundColor: "yellowgreen",
         }}
@@ -153,7 +150,7 @@ function PageGift({ openModal }) {
               src="../../../image/Image Hero Section 1.png"
               sx={{
                 animation: { xs: "unset", md: "MoveUpDown 4s ease infinite" },
-                width: { xs: "424px", md: "1060px" },
+                width: { xs: "410px", md: "1060px" },
                 height: { xs: "268px", md: "669px" },
                 // backgroundColor: "blue",
                 position: "absolute",
