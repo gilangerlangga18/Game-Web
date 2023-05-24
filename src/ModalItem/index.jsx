@@ -9,7 +9,7 @@ import { modalSx as sx } from "./styles";
 
 const style = {
   position: "absolute",
-  top: { xs: "40%", md: "50%" },
+  top: { xs: "50%", md: "50%" },
   left: { xs: "50%", md: "50%" },
   transform: "translate(-50%, -50%)",
   width: { xs: "328px", md: "800px" },
