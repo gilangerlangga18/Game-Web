@@ -9,11 +9,11 @@ import { modalSx as sx } from "./styles";
 
 const style = {
   position: "absolute",
-  top: "50%",
-  left: "50%",
+  top: { xs: "40%", md: "50%" },
+  left: { xs: "50%", md: "50%" },
   transform: "translate(-50%, -50%)",
   width: { xs: "328px", md: "800px" },
-  height: 800,
+  height: { xs: "630px", md: "800px" },
   boxShadow: 24,
   borderRadius: "20px",
   overflow: "auto",
