@@ -49,7 +49,7 @@ function Pagecara() {
   const initialValues = [
     {
       id: 1,
-      defaultIcon: "../../../image/Avatar_Blood_Blade off.png",
+      defaultIcon: "../../../image/Avatar_Blood_Blade_off.png",
       activeIcon: "../../../image/Avatar Blood Blade.png",
       position: "top",
       isActive: true,
