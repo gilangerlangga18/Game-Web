@@ -44,7 +44,7 @@ export const giftSx = {
   },
   leftImageMain: {
     animation: { xs: "unset", md: "MoveUpDown 4s ease infinite" },
-    width: { xs: "400px", md: "1060px" },
+    width: { xs: "390px", md: "1060px" },
     height: { xs: "268px", md: "669px" },
     position: "absolute",
     zIndex: 0,
