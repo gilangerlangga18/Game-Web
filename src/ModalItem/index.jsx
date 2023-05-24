@@ -11,7 +11,7 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 800,
+  width: { xs: "328px", md: "800px" },
   height: 800,
   boxShadow: 24,
   borderRadius: "20px",
@@ -58,8 +58,8 @@ export default function TransitionsModal({ isOpen, close }) {
                 fontFamily: "Merriweather",
                 fontStyle: "normal",
                 fontWeight: " 700",
-                fontSize: "24px",
-                lineHeight: "30px",
+                fontSize: { xs: "14px", md: "24px" },
+                lineHeight: { xs: "18px", md: "30px" },
                 textAlign: " center",
                 letterSpacing: "0.05em",
               }}
@@ -93,7 +93,7 @@ export default function TransitionsModal({ isOpen, close }) {
                 fontFamily: "Merriweather",
                 fontStyle: "normal",
                 fontWeight: " 400",
-                fontSize: "24px",
+                fontSize: { xs: "14px", md: "24px" },
                 lineHeight: "150%",
 
                 textAlign: "center",
@@ -119,8 +119,8 @@ export default function TransitionsModal({ isOpen, close }) {
                   sx={{
                     backgroundImage:
                       'url("../../../image/Button Gift Code.png")',
-                    width: "280px",
-                    height: "90px",
+                    width: { xs: "150px", md: "280px" },
+                    height: { xs: "48px", md: "90px" },
 
                     display: "flex",
                     alignItems: "center",
@@ -131,7 +131,7 @@ export default function TransitionsModal({ isOpen, close }) {
                   <Typography
                     sx={{
                       fontWeight: "700",
-                      fontSize: "24px",
+                      fontSize: { xs: "14px", md: "24px" },
 
                       fontFamily: "Merriweather",
                       fontStyle: "normal",
@@ -144,9 +144,13 @@ export default function TransitionsModal({ isOpen, close }) {
                 <Box
                   sx={{
                     display: "flex",
+                    width: "95%",
+                    flexWrap: "wrap",
 
                     gap: "20px",
                     flexDirection: "row",
+                    justifyContent: "center",
+                    alignItems: "center",
                   }}
                 >
                   {item.preview_item.map((image) => (
