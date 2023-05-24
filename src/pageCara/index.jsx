@@ -139,6 +139,7 @@ function Pagecara() {
               flexDirection: "column",
               gap: { xs: "unset", md: "40px" },
               alignItems: "center",
+              marginTop: { xs: "unset", md: "-500px" },
             }}
           >
             <Typography
@@ -152,6 +153,7 @@ function Pagecara() {
                 fontStyle: "normal",
                 width: { xs: "328px", md: "unset" },
                 textAlign: { xs: "end", md: "unset" },
+                marginTop: { xs: "unset", md: "-100px" },
               }}
             >
               Character Class
