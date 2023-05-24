@@ -1,0 +1,35 @@
+[
+  {
+    "gift": "ILWELCOME.",
+    "preview_item": [
+      "./image/item/Silver.png",
+      "./image/item/Golden Scroll.png",
+      "./image/item/1.5X Exp Potion.png"
+    ]
+  },
+  {
+    "gift": "ILHERO.",
+    "preview_item": [
+      "./image/item/Lv.2 Attack Gem.png",
+      "./image/item/Silver2.png",
+      "./image/item/Secret Code of the Abyss.png",
+      "./image/item/Treasure Vault Key.png"
+    ]
+  },
+  {
+    "gift": "ILIMMORTAL.",
+    "preview_item": [
+      "./image/item/Lv.3 Attack Gem.png",
+      "./image/item/Red Equipment Optional.png",
+      "./image/item/3X Exp Potion.png"
+    ]
+  },
+  {
+    "gift": "ILGOD.",
+    "preview_item": [
+      "./image/item/Personal Name Change Card.png",
+      "./image/item/Golden Hammer.png",
+      "./image/item/Order-Spirit.png"
+    ]
+  }
+]
