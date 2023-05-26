@@ -87,7 +87,7 @@ function PageGift({ openModal }) {
               height: "100%",
               alignItems: "center",
               width: { xs: "400px", md: "1060px" },
-              backgroundColor: "red",
+              
             }}
           >
             <Box
